@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    user-select: none;
+}
+
+:root {
+    --shadow-blue: rgba(33, 36, 217, 0.6);
+    --color-blue: rgb(33, 36, 217);
+}
+
+body {
+    background-color: var(--shadow-blue);
+}
+
+.clock {
+    display: flex;
+    justify-content: center;
+    font-size: 100px;
+    font-weight: 400;
+    color: var(--color-blue);
+    text-shadow: 3px 3px 20px var(--shadow-blue);
+}
+
+.clock .group {
+    width: 400px;
+    display: flex;
+}
+
+.btnGroup {
+    margin: 0 auto;
+    width: 500px;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+}
+
+.btnStart {
+    font-size: 40px;
+    font-weight: 600;
+    border: 2.5px solid var(--color-blue);
+    padding: 5px 35px;
+    border-radius: 10px;
+    transition: 0.3s all ease;
+    cursor: pointer;
+    color: var(--color-blue);
+}
+
+.btnStart:hover {
+    background-color: var(--color-blue);
+    color: #fff;
+    transition: 0.3s all ease;
+}
+
+.btnStart:active {
+    scale: 0.95;
+}
+
+.btnReset i {
+    border: 2.5px solid var(--color-blue);
+    color: var(--color-blue);
+    border-radius: 10px;
+    font-size: 30px;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.btnReset i:hover {
+    background-color: var(--color-blue);
+    color: #fff;
+    transition: 0.3s all ease;
+}
+
+.btnReset i:active {
+    scale: 0.95;
+}
+
+.btnInterval {
+    font-size: 40px;
+    font-weight: 600;
+    border: 2.5px solid var(--color-blue);
+    padding: 5px 35px;
+    border-radius: 10px;
+    transition: 0.3s all ease;
+    cursor: pointer;
+    color: var(--color-blue);
+}
+
+.btnInterval:hover {
+    background-color: var(--color-blue);
+    color: #fff;
+    transition: 0.3s all ease;
+}
+
+main {
+    width: 800px;
+    margin: 50px auto;
+    position: relative;
+}
+
+.clear{
+    position: absolute;
+    left: 150px;
+    font-weight: 600;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 2px solid #000;
+    cursor: pointer;
+    transition: 0.3s all ease;
+}
+
+.clear:hover{
+    background-color: #000;
+    color: #fff;
+    transition: 0.3s all ease;
+}
+
+main .tableTitle {
+    width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    font-size: 25px;
+    padding: 0px 10px;
+    position: relative;
+}
+
+
+main .table {
+    width: 500px;
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px;
+    border: 1px solid;
+    border-radius: 10px;
+}
+
+main .table .counter{
+    padding: 2px;
+    border-radius: 3px;
+}
+
+@media (max-width:450px) {
+    .clock {
+        font-size: 70px;
+    }
+
+    .clock .group {
+        width: 300px;
+        display: flex;
+    }
+
+    .btnStart {
+        font-size: 20px;
+    }
+
+    .btnInterval {
+        font-size: 20px;
+    }
+
+    .btnReset i {
+        font-size: 18px;
+        border: 2px solid var(--color-blue);
+        border-radius: 5px;
+        padding: 5px;
+    }
+}
+
+@media (max-width:800px){
+    main {
+        width: 600px;
+    }
+    .clear{
+        left: 100px;
+    }
+    main .tableTitle {
+        width: 400px;
+        font-size: 20px;
+    }
+    main .table{
+        width: 400px;
+    }
+}
+
+@media (max-width:600px){
+    main {
+        width: 400px;
+    }
+    .clear{
+        left: 0px;
+    }
+}
+
+@media (max-width:500px){
+    .btnGroup{
+        width: 300px;
+    }
+    .btnStart{
+        font-size: 25px;
+        padding: 5px 15px;
+    }
+    .btnInterval{
+        font-size: 25px;
+        padding: 5px 15px;
+    }
+    .btnReset i{
+        font-size: 30px;
+        padding: 5px;
+    }
+}
+
+@media (max-width:400px){
+    main {
+        width: 300px;
+    }
+    .clear{
+        left: 10px;
+    }
+    main .tableTitle {
+        width: 280px;
+        padding: 0px;
+        font-size: 12px;
+    }
+    main .table{
+        width: 280px;
+        padding: 5px;
+        border-radius: 5px;
+        font-size: 14px;
+    }
+}
+
+.more{
+    background-color: rgba(220, 20, 60, 0.614);
+}
+
+.less{
+    background-color: green;
+}
